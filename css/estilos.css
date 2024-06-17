@@ -1,0 +1,101 @@
+html { 
+    scroll-behavior: smooth; /* implementar junto con las anclas o dentificadores del menu, Aplica una transición suave al desplazarse */
+  }
+body {
+    margin:0;
+    padding:0;
+}
+header
+{
+    width:100% ;
+    height: 105vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0, 0.9)),url(../Imagenes/plaza2.jpg)no-repeat;      
+    background-size: cover;/*para ajustar el tamaño completo de la imagen a su contenedor */
+    background-position: center;
+}
+
+nav{
+width: 100%;
+height: 100px;
+display: flex;
+text-align: center ;
+justify-content: space-around;
+color: white;
+padding-top: 20px;
+font-family: cursive;
+}
+nav .logo{
+    font-size: 25px;
+}
+nav .menu a {
+text-decoration:  none;
+color: white;
+padding: 10px 20px;
+font-size: 17px;
+transition: 0.4s;
+}
+nav .menu a:hover{
+    color: brown;
+    border-bottom: 1px solid brown;
+}
+nav .button a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: brown;
+    transition: 0.4s;
+}
+nav .button a:hover{
+    background-color: transparent;
+    color: brown;
+    border: 1px solid brown;
+}
+article{
+
+color: white;
+text-align: center;
+}
+.mensajeinicio{
+color:white;
+margin-bottom: -50px;
+letter-spacing: 5px;
+font-size: 20px;
+font-weight: bold;
+}
+h1{
+    font-size: 4em;
+    color: indianred;
+}
+h1 span{
+    color:white;
+}
+p{
+    font-size: 20px;
+    margin-top: -30px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+article p{
+    padding-top: 25px;
+    font-family: cursive;
+    letter-spacing: 3px;
+    color:white;
+}
+/*hasta aca es la primera pagina de inicio*/
+#Reseña{
+    width:100%;
+    height: 1200;
+    background-color: black;
+}
+section {
+    display: flex;
+}
+
+.ContendioReseña {
+    flex-basis: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}

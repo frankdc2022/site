@@ -1,0 +1,95 @@
+*{
+    margin: 0;/*arriba, derecha, abajo e izquierda: 10px 20px 15px 25px*/
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+body {
+    background:black;/* luego borrar*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;/* establece la altura mínima del elemento al 100% del viewport height (altura de la ventana gráfica del navegador).*/
+  }
+  
+.login-caja{
+width: 400px;
+height: 450px;
+background:transparent;/* luego pasar a transparent*/
+border:  2px solid white;
+border-radius: 20px;
+display: flex;/*declaramos el contenedoR como flexifle, Los elementos secundarios se alinean automáticamente en el eje principal  y se distribuyen en el espacio disponible.*/
+/* los dos siguientes se utilizan juntas para centrar los elementos secundarios tanto en el eje principal como en el eje secundario dentro de un contenedor flexible*/
+justify-content: center;
+align-items: center;
+/*-------*/
+backdrop-filter: blur(10px);/*efecto de desenfoque al fondo de un elemento*/
+}
+h2{
+  font-size: 2em;/*2em aumentaría el tamaño del texto al doble del tamaño de la fuente actual.*/
+  color: white;
+  text-align: center; 
+}
+.input-caja{
+width: 310px;
+margin: 30px 0;/*margen de 30 píxeles en la parte superior e inferior del elemento y izquierdo y derecho en cero.*/
+border-bottom: 2px solid white;
+
+}
+.input-caja input{
+width: 100%;
+  height: 50px;
+  background: transparent;
+border: none;
+outline: none;/*eliminar el contorno*/
+font-size: 1em;
+color: white;
+}
+.recuerdame-caja{
+ margin: -15px 0 15px;/* establece un margen negativo en la parte superior, sin margen en los lados derecho e izquierdo*/
+ color: white;
+ display: flex;
+ font-size: .8em;/*80% del tamaño del elemento padre*/
+ justify-content: space-between;/*para distribuir el espacio disponible entre los elementos de manera equitativa*/
+}
+button{
+width: 100%;
+height: 40px;
+border: none;
+outline: none;
+border-radius: 40px;
+cursor: pointer;/*cambiar la apariencia del cursor pasa sobre el elemento*/
+font-size: 1em;
+color: black;
+}
+.registrate-caja{
+font-size: .8em;
+color: white;
+text-align: center;
+margin: 25px 0 10px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../imagenes/plaza3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;/*poner al final animacion*/
+}
+@keyframes animateBg {/*poner al final animacion*/
+    100% {
+      filter: hue-rotate(200deg);
+    }
+  }
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: white;
+}
+a {
+    color: white;
+  }
